@@ -1,0 +1,26 @@
+Note: there's no output, check the memory cells to see the result.
+
+FACTORIAL
+>>>-<< flags
++++++ n
+[
+>+[>]+[<]>- first iteration
+[>+[>]<+[<]>-] other iterations
+>[<+>-]<- n minus 1
+]
+>>+> removing flag
+>[< if there is another number to the right
+[>[<<+<+>>>-]<<<[>>>+<<<-]>>-] multiplication
+>[-]<<[>>+<<-]>> clean a bit and move result 
+>] set pointer to if's start
+
+
+INPUT VERSION WRITTEN LIKE FAC(n)
+>>>-<<  ,[>+[>  ]+[<]>    -[            >+
+[>      ]<  +[  <]      >-    ]>  [<      +>
+-]<-]>  >+>>[<  [>      [<    <+<+  >>    >-
+]<      <<  [>  >>      +<    <<    -]    >>
+-]      >[  -]  <<[>>+    <<  -]    >>  >]
+
+
+SUMMATION ,[[>+>+<<-]>[<+>-]<-]
